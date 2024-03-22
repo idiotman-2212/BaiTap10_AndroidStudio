@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_group_name"  android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhóm 14"
+        android:textSize="30dp"
+        android:background="#4CAF50"  android:textAlignment="center" />
+
+    <SearchView
+        android:id="@+id/sv_search"  android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_group_name"  />
+
+    <ListView
+        android:id="@+id/lv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/sv_search"  android:layout_above="@+id/pb_loading" />
+
+    <ProgressBar
+        android:id="@+id/pb_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>
